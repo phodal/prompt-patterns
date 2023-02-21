@@ -157,6 +157,25 @@ English: The weather is lovely!
 Roish:
 ```
 
+# 增强 Prompt
+
+## 再生成模式
+
+当我们无法确定我们的 prompt 是否准确，便可以通过 AI 来帮我们丰富 prompt 。如我在：[基于编程、绘画、写作的 AI 探索与总结](https://github.com/phodal/ai-research-for-practise) 的例了一样
+
+- phodal: 我想写一段话描述一张照片，帮我美化一下：一年轻女子穿着裙子，背对着镜头，在海边看着日落，太阳已经到地平线下面了，她的头发在风中飘动。
+- ChatGPT: 这张照片中的场景令人心醉，一位年轻女子穿着一条裙子，站在海边，背对着镜头，凝视着地平线下的夕阳。太阳已经沉入了海面，一片金黄色的光芒在海面上弥漫，照亮了整片海洋，仿佛这个时刻被定格在了时间的某个角落里。女子的头发随着微风轻轻飘动，轮廓被余晖映照得柔和而温暖。她的目光凝视着远方，仿佛在思考着生命的意义和无尽的未来。这张照片中蕴含着一种深刻的内涵，让人感受到时间和自然的力量，也让人思考着自己在这个宏大而美丽的世界中的角色和意义。 
+
+再去除掉不合适的词，进行润色，就可以再创作：
+
+- phodal：翻译成英语
+
+然后再提炼直至扔至 Stable Diffusion 中：
+
+> women back view without face, flowing dress, edge of the sea, backview, back turned to the camera, upon the glow of the setting sun, sun below the horizon, golden light over the water, hair sways gently, Chinese style clothes, black hair,
+
+而后，根据图片的结果，我们再反复修改。
+
 # 学习模式集（待定）
 
 > 该模式集关注于如何让 AI 再学习理解新的内容，生成内容？
