@@ -2,6 +2,8 @@
 
 如何理解 Prompt ？
 
+![Prompt Enginneering](https://files.readme.io/384b77e-PromptEngineering_Visual_1.svg)
+
 > prompt 通常指的是一个输入的文本段落或短语，作为生成模型输出的起点或引导。prompt 可以是一个问题、一段文字描述、一段对话或任何形式的文本输入，模型会基于 prompt 所提供的上下文和语义信息，生成相应的输出文本。
 
 举个例子，对于一个语言模型，prompt 可以是 "The cat sat on the"，模型可以通过对接下来的词语进行预测，生成类似于 "mat"、"chair"、"sofa" 等不同的输出。Prompt 在人工智能语言生成领域中扮演着重要的角色，因为它可以帮助模型更好地理解用户意图，并生成更准确、有意义的文本内容
@@ -284,17 +286,7 @@ console.log(result);
 
 ![Muji Sample](images/wula-muji.png)
 
-# 其它基本概念
-
-在人类世界里，我们是由概念构建的，语言本身就是在解释概念。在 AI 世界里，它也是类似的：
-
-> prompt 通常指的是一个输入的文本段落或短语，作为生成模型输出的起点或引导。prompt 可以是一个问题、一段文字描述、一段对话或任何形式的文本输入，模型会基于 prompt 所提供的上下文和语义信息，生成相应的输出文本。举个例子，对于一个语言模型，prompt 可以是 "The cat sat on the"，模型可以通过对接下来的词语进行预测，生成类似于 "mat"、"chair"、"sofa" 等不同的输出。Prompt 在人工智能语言生成领域中扮演着重要的角色，因为它可以帮助模型更好地理解用户意图，并生成更准确、有意义的文本内容。
-
-对应的 Prompt 工程则是：
-
-> Prompt 工程是一种基于机器学习的自然语言处理技术，旨在生成高质量的文本内容，例如文章、评论、电子邮件、答案等。Prompt 工程通常使用深度学习模型，如生成对抗网络 (GAN)、循环神经网络 (RNN)、BERT 等，通过对大量文本数据进行训练，模型能够学习到自然语言的语法和语义规则，并根据输入的提示 (prompt) 生成相关的文本内容。Prompt 工程可以应用于多种场景，例如自动化写作、机器人客服、虚拟助手等。
-
-![Prompt Enginneering](https://files.readme.io/384b77e-PromptEngineering_Visual_1.svg)
+# 其它
 
 ## 人类如何思考问题？
 
@@ -330,8 +322,6 @@ Cynefin 框架
 ## Practise
 
 参考：[Best practices for prompt engineering with OpenAI API](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
-
-### 减少不精确的描述
 
 ## 相关资源 Prompt Engineering
 
