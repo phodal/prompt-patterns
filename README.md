@@ -1,5 +1,21 @@
 # Prompt 编写模式：用 prompt 构建思维框架
 
+如何理解 Prompt ？
+
+> prompt 通常指的是一个输入的文本段落或短语，作为生成模型输出的起点或引导。prompt 可以是一个问题、一段文字描述、一段对话或任何形式的文本输入，模型会基于 prompt 所提供的上下文和语义信息，生成相应的输出文本。
+
+举个例子，对于一个语言模型，prompt 可以是 "The cat sat on the"，模型可以通过对接下来的词语进行预测，生成类似于 "mat"、"chair"、"sofa" 等不同的输出。Prompt 在人工智能语言生成领域中扮演着重要的角色，因为它可以帮助模型更好地理解用户意图，并生成更准确、有意义的文本内容
+
+诸如于如下的 prompt
+
+> women back view without face, flowing dress, edge of the sea, backview, back turned to the camera, upon the glow of the setting sun, sun below the horizon, golden light over the water, hair sways gently, Chinese style clothes, black hair,
+
+可以在 Stable Diffusion 生成图片：
+
+![Backend View](images/women-backview-3.jpeg)
+
+而在 ChatGPT 则可以生成文本，等等。
+
 # 基础模式：概念与类比
 
 四种基础模式？：
