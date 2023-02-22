@@ -74,7 +74,7 @@ prompt 的关键在于：**如何合理运用类比与概念，以让机器理�
 
 ## By Instruction
 
-![Instruction](images/instruction.svg)
+![Instruction](patterns/instruction.svg)
 
 > 在这种模式下，我们给模型提供一些明确的指令，模型需要根据这些指令生成文本。这种模式通常用于生成类似于技术说明书、操作手册等需要明确指令的文本。指令可以是单个句子或多个段落，具体取决于任务的要求。
 
@@ -123,7 +123,7 @@ prompt 的关键在于：**如何合理运用类比与概念，以让机器理�
 
 ## By proxy
 
-![Proxy](images/proxy.svg)
+![Proxy](patterns/proxy.svg)
 
 > Proxy 模式是指用户可以要求 ChatGPT 以特定的身份、角色或者身份扮演某个特定的人、角色或对象来生成回答。这种模式通常用于模拟某个特定人物的语言风格和语境，生成特定情境下的对话、回答或其他形式的文本。
 
