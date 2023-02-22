@@ -24,7 +24,7 @@ prompt 的关键在于：**如何合理运用类比与概念，以让机器理�
 
 > 省去几千字
 
-如果您指的是AI领域中的prompt模式，它通常是指一种输入-输出的数据格式，用于训练和评估机器学习模型。下面是一个完整的定义：
+如果您指的是 AI 领域中的 prompt 模式，它通常是指一种输入-输出的数据格式，用于训练和评估机器学习模型。下面是一个完整的定义：
 
 - 模式名称（Pattern Name）：Prompt 模式
 - 问题描述（Problem）：如何准备训练数据，以便用于机器学习模型的训练和评估。
@@ -34,12 +34,22 @@ prompt 的关键在于：**如何合理运用类比与概念，以让机器理�
 - 结构图（Structure）：Prompt 模式的结构由一个输入文本和一个输出文本组成，它们被定义为模型的输入和输出。通常，输入文本包括一些关键词或短语，用于指定模型需要执行的任务或操作，而输出文本则是模型的预测结果。
 - 参考（References）：相关的文献包括 "GPT-3: Language Models are Few-Shot Learners"， "Zero-Shot Learning - A Comprehensive Evaluation of the Good, the Bad and the Ugly" 等。常用的机器学习框架包括 TensorFlow，PyTorch 等。
 
-# 基础模式：概念与类比
+# 核心思想：概念与类比
 
-如何有效运用【概念与类比】的示例，可以参考：
+开始之前，可以看一下这个问题示例：
 
-1. [design-patterns-analogy](./design-pattern.analogy.md)
+1. 设计模式的要素是哪些？
+2. 对于 AI 领域的 prompt 编写来说，我们通常使用的模式有哪些？
+3. 能将 AI 领域的 prompt 常见的设计模式用 "设计模式要素" 的格式一一表达吗？
+
+核心思想，将设计模式要素作为一个概念，让 AI 类比到 prompt 里的模式。详细见：
+
+1. [design-pattern.analogy](./design-pattern.analogy.md)
 2. [design-pattern.analogy2](./design-pattern.analogy2.md)
+
+当然了，类比不一定都会成功。
+
+# 基础模式
 
 四种基础模式：
 
