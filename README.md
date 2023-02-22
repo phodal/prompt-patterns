@@ -52,13 +52,21 @@ prompt 的关键在于：**如何合理运用类比与概念，以让机器理�
 
 ### 子模式
 
-- Completion-based prompts（补全型提示）：这种模式下，用户提供一部分的文本，ChatGPT 根据这些文本的上下文，自动生成下一步文本的建议。
-- Classification-based prompts（分类型提示）：这种模式下，用户提供一个问题或任务描述，ChatGPT 根据任务描述生成相应的答案或解决方案。
-- Generation-based prompts（生成型提示）：这种模式下，用户提供一些初始信息，ChatGPT 基于这些信息自动生成新的文本，可以是文本摘要、机器翻译、对话生成等。
-- Translation-based prompts（翻译型提示）：这种模式下，用户提供一个文本，ChatGPT 将其翻译成另一种语言。
-- Question-answering prompts（问答型提示）：这种模式下，用户提供一个问题，ChatGPT 给出相应的答案。
-- Conversation-based prompts（对话型提示）：这种模式下，用户可以与 ChatGPT 进行对话，ChatGPT 根据上下文生成回答。
-- Summarization-based prompts（摘要型提示）：这种模式下，用户提供一段文本，ChatGPT 生成该文本的摘要。
+如我们通过下面的 prompt 转换了 ChatGPT 输出的子模式：
+
+> 转化为 markdown 的 """```markdown {} ```""" 表格形式，其中的字段为英语模式、中文、简述、示例。
+
+表格示例：
+
+| 英语模式                               | 中文                     | 简述                                         | 示例                                                                                      |
+| -------------------------------------- | ------------------------ | -------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Completion-based prompts               | 补全型提示               | 用户提供部分文本，ChatGPT 根据上下文生成建议 | 用户输入“我想买一件…”，ChatGPT 生成“红色连衣裙”                                      |
+| Classification-based prompts           | 分类型提示               | 用户提供问题或任务描述，ChatGPT 生成答案     | 用户输入“如何做巧克力蛋糕？”ChatGPT 生成“将巧克力蛋糕放入预热好的烤箱中烤25-30分钟。” |
+| Generation-based prompts               | 生成型提示               | 用户提供初始信息，ChatGPT 生成新文本         | 用户输入“科技创新”，ChatGPT 生成“人工智能是科技创新领域的重要方向之一。”              |
+| Translation-based prompts              | 翻译型提示               | 用户提供文本，ChatGPT 进行翻译               | 用户输入“Hello”，ChatGPT 生成“你好”                                                    |
+| Question-answering prompts             | 问答型提示               | 用户提供问题，ChatGPT 生成答案               | 用户输入“什么是机器学习？”，ChatGPT 生成“机器学习是一种人工智能的分支。”            |
+| Conversation-based prompts             | 对话型提示               | 用户与 ChatGPT 进行对话，ChatGPT 生成回答   | 用户输入“今天天气怎么样？”ChatGPT 生成“今天天气晴朗，温度适宜。”                      |
+| Summarization-based prompts            | 摘要型提示               | 用户提供文本，ChatGPT 生成文本摘要           | 用户输入一篇文章，ChatGPT 生成该文章的摘要                                               |
 
 ### Output Driven
 
