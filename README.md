@@ -142,18 +142,6 @@ Robot:
 
 > 在这种模式下，我们给模型提供一些特定信息，例如问题或关键词，模型需要生成与这些信息相关的文本。这种模式通常用于生成答案、解释或推荐等。特定信息可以是单个问题或多个关键词，具体取决于任务的要求。
 
-如，在 Stable Diffusion 里，我们可以基于 ControlNet 创建一个 Openpose，相当于是给机器一个示例，而后就可以生成对应的照片：
-
-<table>
-  <tr>
-    <td><img src="./images/openpose-1.png" width="256px" height="256px"></td>
-    <td><img src="./images/openpose-gen-1.png" width="256px" height="256px"></td>
-    <td><img src="./images/openpose-gen-2.png" width="256px" height="256px"></td>
-   </tr> 
-</table>
-
-相似的在 ChatGPT 和 GitHub Copilot 中也是类似的：
-
 ![](https://files.readme.io/aa1f3dd-PromptEngineering_Visual_8.svg)
 
 上图为 Cohere AI 官网的示例图，对应的聊天记录如下：
@@ -183,6 +171,41 @@ Roish:
 > women back view without face, flowing dress, edge of the sea, backview, back turned to the camera, upon the glow of the setting sun, sun below the horizon, golden light over the water, hair sways gently, Chinese style clothes, black hair,
 
 而后，根据图片的结果，我们再反复修改。
+
+## Guideline Driven
+
+
+如，在 Stable Diffusion 里，我们可以基于 ControlNet 创建一个 Openpose，相当于是给机器一个示例，而后就可以生成对应的照片：
+
+<table>
+  <tr>
+    <td><img src="./images/openpose-1.png" width="256px" height="256px"></td>
+    <td><img src="./images/openpose-gen-1.png" width="256px" height="256px"></td>
+    <td><img src="./images/openpose-gen-2.png" width="256px" height="256px"></td>
+   </tr> 
+</table>
+
+相似的在 ChatGPT 和 GitHub Copilot 中也是类似的
+
+# 拆解
+
+> 对于复杂问题，ChaGPT 可能
+
+
+```markdown
+我们来定义一下 DDD 游戏的步骤，一共有 6 个步骤。我以 """ddd: {}""" 开头给定某个行业领域，你就按下面的六步进行分析。而当我发 """ddd {}: {}""" 则表示进行第几步的分析，如 """ddd 1: 博客"""表示对博客进行 DDD 分析的第一步：
+
+"""
+1. 拆解场景：分析特定领域的商业活动，并将其拆解为场景。
+2. 场景过程分析：选定一个场景，并使用 "{名词}已{动词}" 的形式描述过程中所有发生的事件，其中的名词是过程中的实体，其中的动词是实体相关的行为。
+3. 场景建模：基于拆解出的场景和统一语言，进行领域建模，以实现 DDD 设计与代码实现的双向绑定。
+4. 完成所有场景：回到第一步，选择未完成的场景，重复第一到第三步，直到所有场景都被建模。
+5. 生成子域：对模型进行分类，以划定不同的子域。
+6. 生成 API：对于每一个子域，生成其对应的 RESTful API，并以表格的形式展现这些 API。
+"""
+
+明白这个游戏怎么玩了吗？
+```
 
 # 概念模式集
 
