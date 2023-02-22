@@ -74,6 +74,8 @@ prompt 的关键在于：**如何合理运用类比与概念，以让机器理�
 
 ## By Instruction
 
+![Instruction](images/instruction.svg)
+
 > 在这种模式下，我们给模型提供一些明确的指令，模型需要根据这些指令生成文本。这种模式通常用于生成类似于技术说明书、操作手册等需要明确指令的文本。指令可以是单个句子或多个段落，具体取决于任务的要求。
 
 如下是一个示例：
@@ -362,6 +364,8 @@ Cynefin 框架
 ### Instruction specification ??
 
 # 相关资源
+
+本文相关的模式图片参考来源主要是：[Prompt Engineering](https://docs.cohere.ai/docs/prompt-engineering)
 
 ## Practise
 
