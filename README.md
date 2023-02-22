@@ -14,11 +14,17 @@ prompt 的关键在于：**如何合理运用类比与概念，以让机器理�
 
 > women back view without face, flowing dress, edge of the sea, backview, back turned to the camera, upon the glow of the setting sun, sun below the horizon, golden light over the water, hair sways gently, Chinese style clothes, black hair,
 
-可以在 Stable Diffusion 生成图片：
+可以在 Stable Diffusion 生成图片（配置了 negative prompt）：
 
-![Backend View](images/women-backview-3.jpeg)
+<table>
+  <tr>
+    <td><img src="./images/backview-new-1.png" width="256px" height="256px"></td>
+    <td><img src="./images/backview-new-2.png" width="256px" height="256px"></td>
+    <td><img src="./images/backview-new-3.png" width="256px" height="256px"></td>
+   </tr> 
+</table>
 
-而在 ChatGPT 则可以生成文本，等等。
+所以，质量看上去不错，但是可能不是你想要的。在 ChatGPT 则可以生成文本，质量上也是相似的。
 
 # 模式模板
 
