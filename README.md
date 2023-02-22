@@ -22,12 +22,24 @@ prompt 的关键在于：**如何合理运用类比与概念，以让机器理�
 
 # 模式模板
 
-待定...
+> 省去几千字
 
+如果您指的是AI领域中的prompt模式，它通常是指一种输入-输出的数据格式，用于训练和评估机器学习模型。下面是一个完整的定义：
+
+- 模式名称（Pattern Name）：Prompt 模式
+- 问题描述（Problem）：如何准备训练数据，以便用于机器学习模型的训练和评估。
+- 解决方案（Solution）：Prompt 模式是一种输入-输出数据格式，它由一个输入文本和一个输出文本组成。输入文本是一个问题或指令，输出文本是模型预测的答案或结果。通过使用这种格式，可以减少训练数据的需求量，提高模型的泛化性能，同时也使得模型的输出更易于理解和解释。
+- 效果（Consequences）：使用 Prompt 模式可以简化训练数据的准备过程，提高模型的效率和准确率，同时也增加了模型的可解释性和可理解性。
+- 适用性（Applicability）：Prompt 模式适用于自然语言处理领域中的各种任务，如文本分类、情感分析、问答系统、机器翻译等。它也可以用于其他领域中需要使用自然语言作为输入和输出的任务。
+- 结构图（Structure）：Prompt 模式的结构由一个输入文本和一个输出文本组成，它们被定义为模型的输入和输出。通常，输入文本包括一些关键词或短语，用于指定模型需要执行的任务或操作，而输出文本则是模型的预测结果。
+- 参考（References）：相关的文献包括 "GPT-3: Language Models are Few-Shot Learners"， "Zero-Shot Learning - A Comprehensive Evaluation of the Good, the Bad and the Ugly" 等。常用的机器学习框架包括 TensorFlow，PyTorch 等。
 
 # 基础模式：概念与类比
 
-如何有效运用【概念与类比】的示例，可以参考：[design-patterns-analogy](./design-pattern.analogy.md)
+如何有效运用【概念与类比】的示例，可以参考：
+
+1. [design-patterns-analogy](./design-pattern.analogy.md)
+2. [design-pattern.analogy2](./design-pattern.analogy2.md)
 
 四种基础模式：
 
