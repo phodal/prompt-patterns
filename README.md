@@ -220,7 +220,6 @@ Roish:
 
 ## Guideline Driven
 
-
 如，在 Stable Diffusion 里，我们可以基于 ControlNet 创建一个 Openpose，相当于是给机器一个示例，而后就可以生成对应的照片：
 
 <table>
@@ -255,6 +254,9 @@ Roish:
 
 明白这个游戏怎么玩了吗？
 ```
+
+完整过程见：[DDD Sample](./ddd.sample.md)
+
 
 # 概念模式集
 
