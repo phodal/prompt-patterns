@@ -2,7 +2,7 @@
 
 如何理解 Prompt ？
 
-![Prompt Enginneering](https://files.readme.io/384b77e-PromptEngineering_Visual_1.svg)
+![Prompt Enginneering](patterns/prompt-engine.svg)
 
 > prompt 通常指的是一个输入的文本段落或短语，作为生成模型输出的起点或引导。prompt 可以是一个问题、一段文字描述、一段对话或任何形式的文本输入，模型会基于 prompt 所提供的上下文和语义信息，生成相应的输出文本。
 
