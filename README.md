@@ -205,7 +205,7 @@ Robot:
 执行 橙色代表什么
 ```
 
-![](https://files.readme.io/aa1f3dd-PromptEngineering_Visual_8.svg)
+![](patterns/cohere-PromptEngineering_Visual_8.svg)
 
 上图为 Cohere AI 官网的示例图，对应的聊天记录如下：
 
@@ -219,6 +219,8 @@ Roish:
 # 增强 Prompt
 
 ## 符号化
+
+![Symbol](patterns/prompt-symbol-pattern.svg)
 
 > 符号化方法通常通过定义符号、符号之间的关系以及基于这些关系的规则来表示知识。
 
