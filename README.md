@@ -341,10 +341,6 @@ PS：mmp，他一定是故意的。
 
 > 类比是指将一个事物或概念与另一个事物或概念进行比较，找出它们之间的相似之处，以此来推理或说明某个问题或情况。
 
-> 该模式集关注于如何让 AI 再学习理解新的内容，生成内容？
-
-![](images/chatgpt-bootstrap-article.png)
-
 ## 模板方法
 
 > 模板方法模式是一种行为型模式，它定义了一个操作中的算法骨架，将某些步骤延迟到子类中实现，从而使得子类可以在不改变算法结构的情况下重新定义算法中的某些步骤。
@@ -432,6 +428,11 @@ console.log(result);
 ```
 
 ![Muji Sample](images/wula-muji.png)
+
+例子 3：
+
+![](images/chatgpt-bootstrap-article.png)
+
 
 ## 拆解
 
