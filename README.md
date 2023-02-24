@@ -404,34 +404,26 @@ console.log(result);
 
 ## 自举模式
 
-> 自举的核心思想是利用一组基础工具和材料来构建和生成一个新的工具或系统，从而逐步替代掉原有的基础工具和材料。在这个过程中，新的工具或系统会逐渐变得更为高效和强大，从而实现对原有基础工具和材料的完全替代。
+> 自举（Boostrapping）的核心思想是利用一组基础工具和材料来构建和生成一个新的工具或系统，从而逐步替代掉原有的基础工具和材料。在这个过程中，新的工具或系统会逐渐变得更为高效和强大，从而实现对原有基础工具和材料的完全替代。
 
-```markdown
-对于一个设计模式来说，它的大纲一般是如下的格式，你能用自举模式做个示例吗？
+如下图所示：
 
-"""
-├── 背景
-│ └── 引发设计问题的设计情形
-├── 问题
-│ └── 在特定场景下反复出现的一系列作用力
-└── 解决方案 
-     └── 平衡这些作用力的配置
-        ├── 结构（包含组件和组件之间的关系
-        └── 运行阶段行为
-"""
-```
+![Bootstrap](patterns/bootstrapping.png)
 
-再看
+TODO：重新解释，上图出自：《[Bootstrapping in Compiler Design](https://www.geeksforgeeks.org/bootstrapping-in-compiler-design/)
+
+先看例子 1：文章
+
+![](images/chatgpt-bootstrap-article.png)
+
+
+例子 2：Wula 2.0
 
 ```
 > wula：创作一个新游戏名为 muji，并解释一下这个游戏："""类似于 wula，可以做简单的图形计算，如体积、面积等。这个游戏还能把解决过程解释清楚，拥有有可运行的 Python 代码，最后的输出结果是一篇文章。"""
 ```
 
 ![Muji Sample](images/wula-muji.png)
-
-例子 3：
-
-![](images/chatgpt-bootstrap-article.png)
 
 
 ## 拆解
