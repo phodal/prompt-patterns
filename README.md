@@ -1,4 +1,4 @@
-# Prompt 编写模式：用 prompt 构建思维框架
+# Prompt 编写模式：如何将思维框架赋予机器
 
 ChatGPT Simple Cheatsheet
 
