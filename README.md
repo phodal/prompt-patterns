@@ -105,9 +105,9 @@ Prompt 在人工智能语言生成领域中扮演着重要的角色，因为它�
 | Translation-based    | 翻译型 | 用户提供文本，AI 进行翻译        | 用户输入“Hello”，ChatGPT 生成“你好”                          |
 | Question-answering   | 问答型 | 用户提供问题，AI 生成答案        | 用户输入“什么是机器学习？”，ChatGPT 生成“机器学习是一种人工智能的分支。”          |
 | Conversation-based   | 对话型 | 用户与 AI 进行对话，AI 生成回答   | 用户输入“今天天气怎么样？”ChatGPT 生成“今天天气晴朗，温度适宜。”              |
-| Summarization-based  | 摘要型 | 用户提供文本，AI 生成文本摘要      | 用户输入一篇文章，ChatGPT 生成该文章的摘要                           |
+| Summarization-based  | 摘要型 | 用户提供文本，AI 生成文本摘要      | 用户输入一篇文章，ChatGPT 生成该文章的摘要          |
 
-### Output Driven
+其重点是：Output Driven
 
 在提示的开头包含所有相关信息，包括任何上下文或期望的结果，以及 长度，格式样式等。诸如于：`用 100 字总结一下 ChatGPT`。
 
@@ -267,26 +267,6 @@ Negative Prompt 在 Stable Diffusion 被广泛使用，相似的，在 ChatGPT �
 
 ### 例子 1
 
-引入概念的一个系列相关内容，
-
-```markdown
-根据下面的文本重新解释一下 ControlNet：
-
-- 官网介绍：ControlNet is a neural network structure to control diffusion models by adding extra conditions.
-- 模式：根据给的底图，生成一个类似建模效果（法线贴图）的中间图，再生成图片 
-- 场景：用来实现骨骼绑定、精准控线、线稿上色、依据深度图结构透视精准重绘等。
-```
-
-结果：
-
-```markdown
-根据给出的文本，ControlNet是一种神经网络结构，旨在通过添加额外条件来控制扩散模型。在特定场景下，ControlNet被用于生成类似建模效果（法线贴图）的中间图和相关的图像。这种技术可以被应用于多个领域，如骨骼绑定、精准控线、线稿上色、深度图结构透视精准重绘等。
-
-具体来说，ControlNet技术可以被用来控制模型的扩散过程，从而提取特定的信息并生成新的图像。在骨骼绑定、线稿上色等场景中，ControlNet技术可以被用来增强图像，使其更加真实和生动。在依据深度图结构透视精准重绘的场景中，ControlNet技术可以被用来根据图像的深度信息，生成精确的重绘图像，从而提高图像的真实感和逼真度。
-```
-
-### 例子 2
-
 当我们无法确定我们的 prompt 是否准确，便可以通过 AI 来帮我们丰富 prompt 。
 
 如我在：[基于编程、绘画、写作的 AI 探索与总结](https://github.com/phodal/ai-research-for-practise) 的例了一样
@@ -336,6 +316,35 @@ fun listAllDirInDir(dir: String): List<File> {
 生成的代码会更贴近我们的需求。
 
 # 概念模式集
+
+## 概念抽象
+
+对于 ChatGPT 尚不存在的概念，可以通过 Google 相关的内容之后，由 ChatGPT 进行总结。
+
+```markdown
+根据下面的文本重新解释一下 ControlNet：
+
+- 官网介绍：ControlNet is a neural network structure to control diffusion models by adding extra conditions.
+- 模式：根据给的底图，生成一个类似建模效果（法线贴图）的中间图，再生成图片 
+- 场景：用来实现骨骼绑定、精准控线、线稿上色、依据深度图结构透视精准重绘等。
+```
+
+结果：
+
+```markdown
+根据给出的文本，ControlNet是一种神经网络结构，旨在通过添加额外条件来控制扩散模型。在特定场景下，ControlNet被用于生成类似建模效果（法线贴图）的中间图和相关的图像。这种技术可以被应用于多个领域，如骨骼绑定、精准控线、线稿上色、深度图结构透视精准重绘等。
+
+具体来说，ControlNet技术可以被用来控制模型的扩散过程，从而提取特定的信息并生成新的图像。在骨骼绑定、线稿上色等场景中，ControlNet技术可以被用来增强图像，使其更加真实和生动。在依据深度图结构透视精准重绘的场景中，ControlNet技术可以被用来根据图像的深度信息，生成精确的重绘图像，从而提高图像的真实感和逼真度。
+```
+
+缩短：`能用一句话解释一下 ControlNet 吗`
+
+结果：
+
+```
+ControlNet 是一种神经网络结构，通过添加额外的条件来控制扩散模型，从而实现图像增强、重构和生成等功能。
+```
+
 
 ## 概念对齐
 
