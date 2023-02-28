@@ -317,7 +317,7 @@ fun listAllDirInDir(dir: String): List<File> {
 
 # 概念模式集
 
-## language is language
+## language is language（TODO）
 
 todo
 
@@ -489,7 +489,11 @@ TODO：重新解释，上图出自：《[Bootstrapping in Compiler Design](https
 
 完整过程见：[DDD Sample](./ddd.sample.md)
 
-# 其它模式
+# 其它模式？
+
+## pipeline模式（TODO）
+
+后处理 pipe，示例：当你希望给我图片的时候，用mermaid表达
 
 
 ## 图形化实践
