@@ -489,6 +489,52 @@ TODO：重新解释，上图出自：《[Bootstrapping in Compiler Design](https
 
 完整过程见：[DDD Sample](./ddd.sample.md)
 
+# 其它模式
+
+
+## 图形化实践
+
+phodal: 能用 uml 表示一下上文中的 """ArchGuard Pipeline 的工作流程""" 吗？
+
+> 当然可以。下面是 ArchGuard Pipeline 的工作流程的 UML 类图表示：
+
+```lua
++-----------------+          +-----------------+
+| ArchGuardConfig  |          | ArchGuardRunner  |
++-----------------+          +-----------------+
+| - configData     |          | - runnerType     |
++-----------------+          | - runnerImage    |
+                             | - runnerCommands |
+                             +-----------------+
+                                     ^
+                                     |
+                                     |
++-----------------+          +-----------------+
+|    ArchGuard     |          |    RunnerPool    |
++-----------------+          +-----------------+
+| - runnerRegistry |          | - runners        |
++-----------------+          +-----------------+
+| # downloadRunner|          | # getRunner      |
++-----------------+          +-----------------+
+```
+
+ArchGuardConfig 类包含了 ArchGuard Pipeline 的配置信息，ArchGuardRunner 类则表示一个具体的 Runner，即一个执行 ArchGuard Scanner 或者其他工具的实例。RunnerPool 则是 Runner 的管理池，用于动态加载不同的 Runner。ArchGuard 则是整个 ArchGuard Pipeline 的控制类，用于根据 ArchGuardConfig 中的配置信息，加载对应的 Runner，执行任务。
+
+phodal: 能用 mermaid 表示一下上文中的 """ArchGuard Pipeline 的工作流程""" 吗？
+
+当然可以！以下是使用 Mermaid 表示的 ArchGuard Pipeline 的工作流程：
+
+```mermaid
+
+graph TD;
+    A[解析 archguard.yml] --> B[下载 runner]
+    B --> C[执行 runner]
+    C --> D[输出制品]
+    D --> E[上传到服务器]
+```
+
+注：这与我之前用 UML 表示的工作流程是等价的。
+
 # 其它
 
 ## 人类如何思考问题？
