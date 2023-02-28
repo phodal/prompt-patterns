@@ -317,6 +317,10 @@ fun listAllDirInDir(dir: String): List<File> {
 
 # 概念模式集
 
+## language is language
+
+todo
+
 ## 概念抽象
 
 对于 ChatGPT 尚不存在的概念，可以通过 Google 相关的内容之后，由 ChatGPT 进行总结。
