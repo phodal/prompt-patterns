@@ -1,5 +1,7 @@
 # Prompt 编写模式：如何将思维框架赋予机器
 
+欢迎使用集成了这些模式的工具：https://github.com/prompt-engineering/click-prompt
+
 本书旨在介绍一系列的 Prompt 编写模式，以更好地应用 Prompt 对 AI 进行编程。
 
 我们非常感谢您对本书的关注和支持，并欢迎您为该项目做出贡献！您可以通过以下方式参与本书的开发：
