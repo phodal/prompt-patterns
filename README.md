@@ -331,9 +331,94 @@ fun listAllDirInDir(dir: String): List<File> {
 
 # 概念模式集
 
-## language is language（TODO）
+## Language is Language
 
-todo
+对于 ChatGPT 来说，语言就是语言，他不区分自然语言和编程语言，甚至有可能编程语言对它更友好。所以我们可以直接通过编程语言与之交流：
+
+```markdown
+我有下列遗留代码，我想在接口的函数名、参数名不变的情况下（可以新参数，旧的参数不能变）加入新功能：
+
+module.exports = async function loadYamlFile(filepath, workdir = path.dirname(filepath)) { 
+  const content = await fs.readFile(filepath, 'utf8'); // 读取文件内容
+  // TODO: 将 content 看做ejs模板的字符串，进行渲染，如果传入了渲染ejs时的context值不为undefined，就进行渲染，否则不进行渲染。
+
+  // TODO：将渲染后的结果传给yaml.load
+  const data = yaml.load(content); // 解析YAML为JSON对象
+  
+
+  // 遍历JSON对象，查找$ref属性
+  const processRef = async (obj) => {
+    if (typeof obj === 'object' && obj !== null) { // 如果是对象
+      if ('$ref' in obj) { // 如果包含$ref属性
+        const refPath = path.join(workdir, obj.$ref.split('#')[0]); // 获取引用文件路径
+        const pointer = obj.$ref.split('#')[1]; // 获取JSON指针
+
+        // TODO: 递归调用的时候，取出context中以obj.$ref的属性值作为属性名的值作为新的context向下传递
+        const refData = await loadYamlFile(refPath, path.dirname(refPath)); // 递归读取引用文件
+        const value = getValueByPointer(refData, pointer); // 修复了 # 号问题
+        return value;
+      } else { // 如果不包含$ref属性，递归处理子属性
+        for (const prop in obj) {
+          obj[prop] = await processRef(obj[prop]);
+        }
+      }
+    }
+    return obj;
+  };
+```
+
+上述描述会比纯自然语言更容易描述我们的需求，适合于更精细的指导。同时，不一定是编程语言，结构化的声明式DSL它也可以很好的解析，如：
+
+
+```markdown
+把我给定的输入输出，按照下面的格式写成一个测试用例的描述：
+
+{
+    desc: 'Test with $p_ref returning array',
+    input: {
+      filepath: './test18.yml',
+      workdir: './test/v2',
+    },
+    expected: {
+        "name": "Alice",
+        "age": 20
+      }
+  }
+```
+
+结果：
+
+```markdown
+{
+  desc: 'Test with $p_ref returning array',
+  input: {
+    filepath: './test19.yml',
+    workdir: './test/v2',
+  },
+  expected: [
+    {
+      "name": "Bob"
+    },
+    {
+      "name": "Alice"
+    },
+    {
+      "name": "Bob"
+    },
+    {
+      "name": "Alice"
+    }
+  ]
+}
+该测试用例输入了一个 YAML 文件 test19.yml，该文件中包含了一个 $flaten 属性，其值为两个 $p_ref 对象组成的数组，引用了一个返回数组的 YAML 文件 test19_ref.yml。
+
+执行该测试用例后，期望得到的输出是一个数组，其中包含了两个 $p_ref 引用结果的 flatten 后的结果。
+
+需要注意的是，由于该测试用例涉及到文件读取和模板渲染等操作，需要在测试前确保相关文件和依赖库已经正确安装并配置好。
+```
+
+通过使用DSL，还可以缩短输入和输出的token数，从而放大 ChatGPT 的能力。
+
 
 ## 概念抽象
 
